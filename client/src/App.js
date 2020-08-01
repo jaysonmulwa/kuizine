@@ -8,28 +8,6 @@ import {
 } from "react-router-dom";
 import { createBrowserHistory } from "history";
 
-import {
-  Button,
-  CardTitle,
-  CardText,
-  Nav,
-  NavItem,
-  NavLink,
-  CardImg,
-  CardBody,
-  CardSubtitle,
-  Media,
-} from "reactstrap";
-import {
-  Card,
-  Image,
-  Container,
-  Row,
-  Col,
-  ListGroup,
-  ListGroupItem,
-} from "react-bootstrap";
-import { FiShare, FiStar, FiSave, FiBookmark, FiHeart } from "react-icons/fi";
 
 import "./App.css";
 import "./style.generated.css";
