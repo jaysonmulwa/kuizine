@@ -8,14 +8,14 @@ import {
 } from "react-router-dom";
 import { createBrowserHistory } from "history";
 
-import { Spinner } from react-strap;
+import { Spinner } from 'reactstrap';
 
 import "./App.css";
 import "./style.generated.css";
 
 import { Provider } from "react-redux";
 import store from "./store";
-import { stripBasename } from "history/PathUtils";
+
 
 /*This space is for whatever*/
 
