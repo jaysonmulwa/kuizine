@@ -8,12 +8,14 @@ import {
 } from "react-router-dom";
 import { createBrowserHistory } from "history";
 
+import { Spinner } from react-strap;
 
 import "./App.css";
 import "./style.generated.css";
 
 import { Provider } from "react-redux";
 import store from "./store";
+import { stripBasename } from "history/PathUtils";
 
 /*This space is for whatever*/
 
@@ -43,7 +45,8 @@ const history = createBrowserHistory();
 
 const HomePageTemplate = (props) => (
   <div>
-    <Suspense fallback={<div>Loading...</div>}>
+    
+    <Suspense fallback={<div className="centered"><Spinner style={{ width: '3rem', height: '3rem' }} color="danger"/></div>}>   
       <SidebarMenuComponentLazy />
       <NavbarComponentLazy />
       <ContentComponentLazy />
